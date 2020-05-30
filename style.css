@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Maven+Pro|Montserrat|Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 5rem;
+    background-color: #fafafa;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex-shrink: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+}
+
+.baldoyle_green {
+    background-color: #009688;
+}
+
+/* navbar and footer styling */
+nav {
+    font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    color: #fafafa;
+    letter-spacing: 1px;
+}
+.navbar-brand {
+    font-weight: 700;
+    color: #fafafa;
+    padding-top: 0.5em;
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+    padding-right: 2rem;
+    transition: transform .5s;
+}
+
+.navbar-brand:hover{
+    transform: scale(1.05);
+    color: #004841;
+}
+
+.nav-link {
+    color: #fafafa;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.nav-link:hover {
+    letter-spacing: 2px;
+    color: #fafafa;
+}
+.nav_item ::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: white;
+    background: rgba(255, 255, 255, 0.7);
+    transition: width 0.3s;
+}
+.nav_item :hover::after {
+    width: 100%;
+}
+.nav-item{
+padding-right: 2em;
+}
+.navbar-toggler {
+    color: #fafafa;
+}
+
+.facebook{
+    color: #fafafa;
+    transition: transform .5s;
+}
+.facebook:hover{
+    transform: scale(1.2);
+    color: #004841;
+}
+
+i{
+    padding: 0.5rem;
+    border-radius: 7px;
+    color:#3b5998;
+    background-color: #fafafa;
+}
+/* Home section */
+
+.main-section{
+    padding-top: 5rem;
+}
+
+@media(max-width: 780px){
+
+    .img-thumbnail{
+        width: 18rem;
+        height: 18rem;
+    }
+}
+@media(min-width: 781px){
+
+    .map-section{
+       text-align: center;
+    }
+}
